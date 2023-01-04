@@ -37,3 +37,20 @@ button {
   margin: 0 auto;
   padding: 0 10px;
 }
+
+.main {
+  background-color: $main-background;
+}
+
+section {
+  margin-bottom: 35px;
+  padding-top: 100px;
+}
+
+.section-title {
+  color: $second-color;
+  font-weight: 700;
+  font-size: 59px;
+  line-height: 73px;
+  text-align: center;
+}

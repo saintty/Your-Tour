@@ -4,78 +4,10 @@
 @import "fonts";
 @import "global";
 
-/* HEADER */
-.header {
-  padding-bottom: 119px;
+/* Components */
+@import "blocks/header";
+@import "blocks/tour";
+@import "blocks/card";
 
-  background-image: url("../images/header-img.jpg");
-  background-repeat: no-repeat;
-  background-position: center 0;
-  background-size: cover;
-
-  &__top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    max-width: 1198px;
-    margin: auto;
-    padding: 28px 1px;
-  }
-
-  &__logo {
-    display: block;
-    width: 181.84px;
-    height: 32px;
-  }
-
-  &-button-wrapper {
-    display: flex;
-    justify-content: center;
-  }
-
-  &__button {
-    padding: 5px 20px;
-
-    color: $second-color;
-    font-size: 17px;
-    line-height: 24px;
-    letter-spacing: -0.01em;
-
-    background-color: #fff;
-    border-radius: 10px;
-  }
-}
-
-.nav {
-  &__list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  &__item + &__item {
-    margin-left: 50px;
-  }
-}
-
-.title {
-  max-width: 768px;
-  margin: 118px auto 51px;
-
-  font-weight: 700;
-  font-size: 96px;
-  line-height: 105px;
-  letter-spacing: 0.02em;
-  text-align: center;
-}
-
-.subtitle {
-  max-width: 562px;
-  margin: 0 auto;
-  margin-bottom: 50px;
-
-  text-align: center;
-}
-
+/* Media */
 @import "media";

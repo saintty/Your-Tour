@@ -8,6 +8,8 @@ import rename from 'gulp-rename';
 import autoPrefixer from 'gulp-autoprefixer';
 import dartSass from "sass";
 import gulpSass from 'gulp-sass';
+import gcmq from "gulp-group-css-media-queries";
+import csso from "gulp-csso";
 
 // JavaScript
 import uglify from 'gulp-uglify-es';
@@ -15,11 +17,13 @@ import uglify from 'gulp-uglify-es';
 const scss = gulpSass(dartSass);
 export const styles = () => {
     return gulp.src('./src/scss/style.scss')
-        .pipe(scss({outputStyle: 'compressed'}))
+        .pipe(scss({outputStyle: 'expanded'}))
+        .pipe(gcmq())
         .pipe(autoPrefixer({
             overrideBrowserslist: ['last 10 version'],
             grid: true
         }))
+        .pipe(csso())
         .pipe(gulp.dest('./src/css'));
 }
 

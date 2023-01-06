@@ -59,7 +59,7 @@
   &__button {
     padding: 5px 20px;
 
-    color: $second-color;
+    color: $black;
     font-size: 17px;
     line-height: 24px;
     letter-spacing: -0.01em;
@@ -72,7 +72,7 @@
 @media (max-width: 1200px) {
   .header {
     &__top {
-      padding: 28px 47px;
+      padding: 28px 4px;
     }
     &-nav__item + &-nav__item {
       margin-left: 30px;
@@ -153,7 +153,7 @@
 @media (max-width: 420px) {
   .header {
     &__top {
-      padding: 32px 10px;
+      padding: 32px 0;
     }
 
     &__logo {

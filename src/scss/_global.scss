@@ -12,7 +12,8 @@ body {
   min-width: 320px;
   overflow-x: hidden;
 
-  color: $primary-color;
+  color: $white;
+  font-weight: 400;
   font-size: 20px;
   font-family: Roboto, sans-serif;
   line-height: 28px;
@@ -39,7 +40,7 @@ button {
 }
 
 .main {
-  background-color: $main-background;
+  background-color: $beige-100;
 }
 
 section {
@@ -48,9 +49,19 @@ section {
 }
 
 .section-title {
-  color: $second-color;
+  margin-bottom: 30px;
+
+  color: $black;
   font-weight: 700;
   font-size: 59px;
   line-height: 73px;
+  text-align: center;
+}
+
+.section-subtitle {
+  max-width: 400px;
+  margin: 0 auto 100px;
+
+  color: $gray-300;
   text-align: center;
 }

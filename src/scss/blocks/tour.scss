@@ -13,7 +13,7 @@
   align-items: center;
   margin-bottom: 100px;
 
-  color: $second-color;
+  color: $black;
   font-weight: 700;
   font-size: 23px;
 
@@ -32,7 +32,7 @@
     width: 100%;
     height: 2px;
 
-    background-color: $second-color;
+    background-color: $black;
     opacity: 0;
 
     transition: all 0.3s ease;
@@ -45,11 +45,11 @@
   }
 
   &__item_active {
-    color: $active;
+    color: $orange-200;
   }
 
   &__item_active::after {
-    background-color: $active;
+    background-color: $orange-200;
     opacity: 1;
   }
 
@@ -126,22 +126,22 @@
   }
 
   &__item_1 {
-    background-image: url("../../images/travel-cards/card-1.jpg");
+    background-image: url("../images/travel-cards/card-1.jpg");
   }
   &__item_2 {
-    background-image: url("../../images/travel-cards/card-2.jpg");
+    background-image: url("../images/travel-cards/card-2.jpg");
   }
   &__item_3 {
-    background-image: url("../../images/travel-cards/card-3.jpg");
+    background-image: url("../images/travel-cards/card-3.jpg");
   }
   &__item_4 {
-    background-image: url("../../images/travel-cards/card-4.jpg");
+    background-image: url("../images/travel-cards/card-4.jpg");
   }
   &__item_5 {
-    background-image: url("../../images/travel-cards/card-5.jpg");
+    background-image: url("../images/travel-cards/card-5.jpg");
   }
   &__item_6 {
-    background-image: url("../../images/travel-cards/card-6.jpg");
+    background-image: url("../images/travel-cards/card-6.jpg");
   }
 }
 
@@ -169,22 +169,22 @@
     }
 
     &__item_1 {
-      background-image: url("../../images/travel-cards/card-1-medium.jpg");
+      background-image: url("../images/travel-cards/card-1-medium.jpg");
     }
     &__item_2 {
-      background-image: url("../../images/travel-cards/card-2-medium.jpg");
+      background-image: url("../images/travel-cards/card-2-medium.jpg");
     }
     &__item_3 {
-      background-image: url("../../images/travel-cards/card-3-medium.jpg");
+      background-image: url("../images/travel-cards/card-3-medium.jpg");
     }
     &__item_4 {
-      background-image: url("../../images/travel-cards/card-4-medium.jpg");
+      background-image: url("../images/travel-cards/card-4-medium.jpg");
     }
     &__item_5 {
-      background-image: url("../../images/travel-cards/card-5-medium.jpg");
+      background-image: url("../images/travel-cards/card-5-medium.jpg");
     }
     &__item_6 {
-      background-image: url("../../images/travel-cards/card-6-medium.jpg");
+      background-image: url("../images/travel-cards/card-6-medium.jpg");
     }
   }
 }
@@ -261,7 +261,7 @@
 @media (max-width: 420px) {
   .tour {
     &__title {
-      letter-spacing: 0.02em;
+      margin-bottom: 30px;
     }
   }
   .tour-categories {
@@ -287,27 +287,27 @@
     }
 
     &__item_1 {
-      background-image: url("../../images/travel-cards/card-1-small.jpg");
+      background-image: url("../images/travel-cards/card-1-small.jpg");
     }
 
     &__item_2 {
-      background-image: url("../../images/travel-cards/card-2-small.jpg");
+      background-image: url("../images/travel-cards/card-2-small.jpg");
     }
 
     &__item_3 {
-      background-image: url("../../images/travel-cards/card-3-small.jpg");
+      background-image: url("../images/travel-cards/card-3-small.jpg");
     }
 
     &__item_4 {
-      background-image: url("../../images/travel-cards/card-4-small.jpg");
+      background-image: url("../images/travel-cards/card-4-small.jpg");
     }
 
     &__item_5 {
-      background-image: url("../../images/travel-cards/card-5-small.jpg");
+      background-image: url("../images/travel-cards/card-5-small.jpg");
     }
 
     &__item_6 {
-      background-image: url("../../images/travel-cards/card-6-small.jpg");
+      background-image: url("../images/travel-cards/card-6-small.jpg");
     }
 
     &__name {

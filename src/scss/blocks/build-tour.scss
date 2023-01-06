@@ -1,0 +1,381 @@
+.form {
+  padding: 70px;
+
+  border-radius: 50px;
+  background-color: #fff;
+
+  &__fieldset {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 33px;
+  }
+
+  &__field {
+    width: 50%;
+    max-width: 500px;
+  }
+
+  &__field + &__field {
+    margin-left: 30px;
+  }
+
+  &__fieldset_radio-input {
+    flex-wrap: wrap;
+    margin-bottom: 26px;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 8px;
+
+    color: $black;
+
+    cursor: pointer;
+  }
+
+  &__label_long {
+    width: 100%;
+  }
+
+  &__label_age {
+    position: relative;
+
+    margin-right: 31px;
+    padding-left: 37px;
+  }
+
+  &__label_age::before {
+    position: absolute;
+
+    top: 1px;
+    left: 0;
+
+    width: 26px;
+    height: 26px;
+
+    border: 2px solid $black;
+    border-radius: 50%;
+
+    content: "";
+  }
+
+  &__label_age::after {
+    position: absolute;
+
+    top: 8px;
+    left: 7px;
+
+    width: 12px;
+    height: 12px;
+
+    background-color: $black;
+    border-radius: 50%;
+
+    opacity: 0;
+    transition: all 0.3s ease;
+
+    content: "";
+  }
+
+  &__label_license {
+    position: relative;
+
+    margin-bottom: 33px;
+    padding-left: 45px;
+
+    color: $gray-300;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+  }
+
+  &__label_license::before {
+    position: absolute;
+
+    top: -1px;
+    left: 0;
+
+    width: 26px;
+    height: 26px;
+
+    border: 2px solid $black;
+    border-radius: 5px;
+
+    content: "";
+  }
+
+  &__label_license:after {
+    position: absolute;
+
+    top: 7px;
+    left: 7px;
+
+    width: 12px;
+    height: 7px;
+
+    border-bottom: 2px solid $black;
+    border-left: 2px solid $black;
+    border-radius: 1px;
+
+    opacity: 0;
+
+    transition: all 0.3s ease;
+    transform: rotate(-45deg);
+
+    content: "";
+  }
+
+  &__input {
+    width: 100%;
+    padding: 19px;
+
+    border: 1px solid $beige-200;
+    border-radius: 10px;
+    background-color: $beige-100;
+
+    outline: none;
+
+    color: $black;
+    font-size: 20px;
+    line-height: 28px;
+
+    cursor: pointer;
+  }
+
+  &__input:placeholder {
+    color: $gray-300;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  &__input:hover {
+    background-color: $beige-200;
+  }
+
+  &__input:focus {
+    border-color: $gray-300;
+    background-color: $beige-200;
+  }
+
+  &__input_date {
+    max-height: 68px;
+  }
+
+  &__input_age:checked + &__label_age::after,
+  &__input_license:checked + &__label_license:after {
+    opacity: 1;
+  }
+
+  &__select {
+    padding-left: 15px;
+  }
+
+  &__select:required:invalid {
+    color: $gray-300;
+  }
+
+  &__select option[value=""][disabled] {
+    display: none;
+  }
+
+  &__select option {
+    color: $black;
+  }
+
+  &__input_age,
+  &__input_license {
+    position: absolute;
+    z-index: -2;
+
+    opacity: 0;
+  }
+
+  &__textarea {
+    height: 152px;
+    margin-bottom: 26px;
+
+    resize: none;
+  }
+
+  &__license {
+    display: inline;
+
+    color: $black;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  &__button {
+    width: 235px;
+    padding: 15px;
+
+    font-size: 20px;
+    line-height: 28px;
+
+    border-radius: 10px;
+  }
+
+  &__button + &__button {
+    margin-left: 30px;
+  }
+
+  &__button_submit {
+    color: $white;
+    background-color: $green-400;
+  }
+
+  &__button_reset {
+    color: $green-400;
+    background-color: $green-100;
+  }
+}
+
+@media (max-width: 1030px) {
+  .form {
+    padding: 60px;
+
+    &__field + &__field {
+      margin-left: 20px;
+    }
+
+    &__label_license {
+      margin-bottom: 34px;
+      padding-left: 37px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .form {
+    padding: 40px;
+
+    &__fieldset {
+      flex-direction: column;
+    }
+
+    &__fieldset_radio-input {
+      flex-direction: row;
+    }
+
+    &__field {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    &__field + &__field {
+      margin-left: 0;
+      margin-top: 33px;
+    }
+
+    &__button {
+      width: 200px;
+    }
+
+    &__button + &__button {
+      margin-left: 20px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .form {
+    padding: 20px;
+
+    &__fieldset {
+      margin-bottom: 30px;
+    }
+
+    &__field + &__field {
+      margin-top: 30px;
+    }
+
+    &__label {
+      font-size: 16px;
+      line-height: 23px;
+    }
+
+    &__input {
+      padding: 9px;
+
+      font-size: 16px;
+      line-height: 23px;
+    }
+
+    &__select {
+      padding: 12px 9px 11px 5px;
+    }
+
+    &__input_date {
+      max-height: 43px;
+    }
+
+    &__input::placeholder {
+      font-size: 16px;
+      line-height: 23px;
+    }
+
+    &__textarea {
+      height: 132px;
+      margin-bottom: 23px;
+    }
+
+    &__fieldset_radio-input {
+      margin-bottom: 23px;
+    }
+
+    &__label_license {
+      margin-bottom: 29px;
+      padding-left: 30px;
+
+      letter-spacing: -0.002em;
+    }
+
+    &__label_age {
+      margin-right: 30px;
+      padding-left: 30px;
+    }
+
+    &__label_age::before {
+      top: 2px;
+
+      width: 20px;
+      height: 20px;
+    }
+
+    &__label_age::after {
+      left: 6px;
+
+      width: 8px;
+      height: 8px;
+    }
+
+    &__label_license::before {
+      width: 20px;
+      height: 20px;
+    }
+
+    &__label_license:after {
+      top: 5px;
+      left: 5px;
+      width: 10px;
+      height: 6px;
+    }
+
+    &__button {
+      width: 134px;
+      padding: 12px;
+
+      font-size: 16px;
+      line-height: 23px;
+    }
+
+    &__button + &__button {
+      margin-left: 10px;
+    }
+  }
+}

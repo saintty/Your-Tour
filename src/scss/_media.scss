@@ -1,3 +1,9 @@
+@media (max-width: 1030px) {
+  .container {
+    padding: 0 53px;
+  }
+}
+
 @media (max-width: 768px) {
   section {
     margin-bottom: 35px;
@@ -5,7 +11,32 @@
   }
 
   .section-title {
+    margin-bottom: 20px;
+
     font-size: 34px;
     line-height: 38px;
+  }
+
+  .section-subtitle {
+    margin-bottom: 60px;
+  }
+}
+
+@media(max-width: 600px) {
+  .container {
+    padding: 0 21px;
+  }
+
+  .section-subtitle {
+    margin-bottom: 40px;
+
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+
+@media (max-width: 420px) {
+  .section-title {
+    letter-spacing: 0.02em;
   }
 }

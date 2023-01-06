@@ -4,11 +4,12 @@
 @import "fonts";
 @import "global";
 
+/* Media */
+@import "media";
+
 /* Components */
 @import "blocks/header";
 @import "blocks/tour";
 @import "blocks/card";
 @import "blocks/build-tour";
-
-/* Media */
-@import "media";
+@import "blocks/feedback";

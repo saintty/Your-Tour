@@ -59,8 +59,15 @@ section {
 }
 
 .section-subtitle {
+  max-width: 418px;
   margin: 0 auto 100px;
 
   color: $gray-300;
   text-align: center;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 30px;
 }

@@ -157,20 +157,18 @@
                 onclick="(this.type='date')" onblur="(this.type='text')">
             </div>
           </fieldset>
-
-          <!-- Correct -->
           <label class="form__label" for="textarea">Комментарий</label>
           <textarea id="textarea" class="form__textarea form__input" placeholder=""></textarea>
           <fieldset class="form__fieldset form__fieldset_radio-input">
             <label class="form__label form__label_long">Вам есть 18 лет?</label>
 
-            <input id="age_yes" class="form__input form__input_age" type="radio" name="age" value="1" required>
+            <input id="age_yes" class="form__input_age" type="radio" name="age" value="1" required>
             <label class="form__label form__label_age" for="age_yes">Да</label>
 
-            <input id="age_no" class="form__input form__input_age" type="radio" name="age" value="0">
+            <input id="age_no" class="form__input_age" type="radio" name="age" value="0">
             <label class="form__label form__label_age" for="age_no">Нет</label>
           </fieldset>
-          <input id="license" class="form__input form__input_license" type="checkbox">
+          <input id="license" class="form__input_license" type="checkbox">
           <label for="license" class="form__label form__label_license">
             Нажимая кнопку, я принимаю условия<a class="form__license" href="#">&nbsp;Лицензионного договора</a></label>
           <div class="form__buttons">
@@ -184,32 +182,71 @@
     <section class="feedback">
       <div class="container">
         <h2 class="feedback__title section-title">Отзывы наших путешественников</h2>
-        <p class="feedback__subtitle section-subtitle">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
+        <p class="feedback__subtitle section-subtitle">Идейные соображения высшего порядка, а также рамки и место
+          обучения кадров</p>
         <div class="feedback__list">
           <article class="feedback__item">
             <p class="feedback__text">
-              Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение модели развития.
+              Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу
+              (специалистов) участие в формировании новых предложений. Идейные соображения высшего порядка, а также
+              начало повседневной работы по формированию позиции позволяет оценить значение модели развития.
             </p>
             <footer class="feedback__footer">
               <div class="feedback__box">
                 <h3 class="feedback__author">Мария</h3>
                 <p class="feedback__tour">Тур: Вдали от дома </p>
               </div>
-              <img class="feedback__avatar" src="images/feedback/avatar-1.png" alt="Аватар пользователя, оставившего отзыв">
+              <img class="feedback__avatar" src="images/feedback/avatar-1.png"
+                alt="Аватар пользователя, оставившего отзыв">
             </footer>
           </article>
           <article class="feedback__item">
             <p class="feedback__text">
-              Равным образом постоянный количественный рост и сфера нашей активности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям.<br><br>Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития.
+              Равным образом постоянный количественный рост и сфера нашей активности играет важную роль в формировании
+              системы обучения кадров, соответствует насущным потребностям.<br><br>Значимость этих проблем настолько
+              очевидна, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов)
+              участие в формировании новых предложений. Повседневная практика показывает, что реализация намеченных
+              плановых заданий в значительной степени обуславливает создание модели развития.
             </p>
             <footer class="feedback__footer">
               <div class="feedback__box">
                 <h3 class="feedback__author">Павел</h3>
                 <p class="feedback__tour">Тур: Путешествие в горы</p>
               </div>
-              <img class="feedback__avatar" src="images/feedback/avatar-2.png" alt="Аватар пользователя, оставившего отзыв">
+              <img class="feedback__avatar" src="images/feedback/avatar-2.png"
+                alt="Аватар пользователя, оставившего отзыв">
             </footer>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="history">
+      <div class="wrapper">
+        <h2 class="history__title section-title">Фотографии путешествий</h2>
+        <p class="history__subtitile section-subtitle">Идейные соображения высшего порядка, а также рамки и место
+          обучения
+          кадров</p>
+        <div class="gallery">
+          <div class="gallery__row">
+            <div class="gallery__item"><img class="gallery__img" src="images/gallery/picture-1.jpg" alt="Галерея путешествий"></div>
+            <div class="gallery__item gallery__item_hidden-medium"><img class="gallery__img" src="images/gallery/picture-2.jpg" alt="Галерея путешествий"></div>
+            <div class="gallery__item gallery__item_hidden-small"><img class="gallery__img" src="images/gallery/picture-3.jpg" alt="Галерея путешествий"></div>
+            <div class="gallery__item"><img class="gallery__img" src="images/gallery/picture-4.jpg" alt="Галерея путешествий"></div>
+          </div>
+          <div class="gallery__row gallery__row_long">
+            <div class="gallery__item"><img class="gallery__img" src="images/gallery/picture-5.jpg" alt="Галерея путешествий"></div>
+            <div class="gallery__item gallery__item_hidden-small"><img class="gallery__img" src="images/gallery/picture-6.jpg" alt="Галерея путешествий"></div>
+            <div class="gallery__item gallery__item_hidden-medium"><img class="gallery__img" src="images/gallery/picture-7.jpg" alt="Галерея путешествий"></div>
+            <div class="gallery__item"><img class="gallery__img" src="images/gallery/picture-8.jpg" alt="Галерея путешествий"></div>
+            <div class="gallery__item"><img class="gallery__img" src="images/gallery/picture-9.jpg" alt="Галерея путешествий"></div>
+          </div>
+          <div class="gallery__row gallery__row_long">
+            <div class="gallery__item"><img class="gallery__img" src="images/gallery/picture-10.jpg" alt="Галерея путешествий"></div>
+            <div class="gallery__item"><img class="gallery__img" src="images/gallery/picture-11.jpg" alt="Галерея путешествий"></div>
+            <div class="gallery__item gallery__item_hidden-small"><img class="gallery__img" src="images/gallery/picture-12.jpg" alt="Галерея путешествий"></div>
+            <div class="gallery__item gallery__item_hidden-medium"><img class="gallery__img" src="images/gallery/picture-13.jpg" alt="Галерея путешествий"></div>
+          </div>
         </div>
       </div>
     </section>

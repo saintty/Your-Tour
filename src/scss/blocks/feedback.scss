@@ -90,12 +90,18 @@
   }
 }
 
+@media (max-width: 768px) {
+  .feedback {
+    &__item {
+      border-radius: 35px;
+    }
+  }
+}
+
 @media (max-width: 600px) {
   .feedback {
     &__item {
       padding: 20px;
-
-      border-radius: 20px;
     }
 
     &__text {
@@ -109,9 +115,18 @@
     }
 
     &__author {
+      font-weight: 700;
       font-size: 23px;
       line-height: 28px;
       letter-spacing: 0.04em;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .feedback {
+    &__item {
+      border-radius: 20px;
     }
   }
 }

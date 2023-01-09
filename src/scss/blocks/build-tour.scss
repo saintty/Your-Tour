@@ -253,6 +253,10 @@
       margin-bottom: 34px;
       padding-left: 37px;
     }
+
+    &__select {
+      padding-top: 20px;
+    }
   }
 }
 
@@ -389,5 +393,11 @@
     &__button + &__button {
       margin-left: 10px;
     }
+  }
+}
+
+@media (max-width: 500px) {
+  .form {
+    border-radius: 30px;
   }
 }

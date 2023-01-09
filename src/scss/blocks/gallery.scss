@@ -95,6 +95,14 @@
   }
 }
 
+@media (max-width: 500px) {
+  .gallery {
+    &__img {
+      border-radius: 20px;
+    }
+  }
+}
+
 @media (max-width: 480px) {
   .gallery {
     &__img {
@@ -115,8 +123,6 @@
 
     &__img {
       height: 110px;
-      border-radius: 20px;
     }
   }
-
 }

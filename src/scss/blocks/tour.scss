@@ -70,14 +70,39 @@
   &__item {
     position: relative;
 
+    width: 33%;
+    max-width: 370px;
+
+    overflow: hidden;
     border-radius: 50px;
-    transition: all 0.3s ease;
+    box-shadow: 0 4px 4px 0 rgba(#000, 25%);
+  }
+
+  &__link {
+    border-radius: 50px;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 531px;
+    object-fit: cover;
+
+    border-radius: 50px;
   }
 
   &__wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
     padding: 50px;
-    width: 370px;
-    height: 531px;
     transition: all 0.3s ease;
 
     background: linear-gradient(
@@ -86,15 +111,17 @@
       rgba(0, 0, 0, 0.06) 48.44%,
       rgba(0, 0, 0, 0.5) 100%
     );
+    border-radius: 50px;
   }
 
   &__item:hover &__wrapper {
     padding: 40px;
   }
 
+
   &__name {
     max-width: 270px;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
 
     font-weight: 500;
     font-size: 35px;
@@ -102,89 +129,54 @@
   }
 
   &__price {
-    display: block;
-    margin-bottom: 270px;
-
     font-size: 17px;
     line-height: 24px;
     letter-spacing: -0.01em;
   }
 
   &__more {
+    margin-bottom: -7px;
+
     font-weight: 700;
     font-size: 23px;
   }
 
-  &__link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    border-radius: 50px;
-  }
-
-  &__item_1 {
-    background-image: url("../images/travel-cards/card-1.jpg");
-  }
-  &__item_2 {
-    background-image: url("../images/travel-cards/card-2.jpg");
-  }
-  &__item_3 {
-    background-image: url("../images/travel-cards/card-3.jpg");
-  }
-  &__item_4 {
-    background-image: url("../images/travel-cards/card-4.jpg");
-  }
-  &__item_5 {
-    background-image: url("../images/travel-cards/card-5.jpg");
-  }
-  &__item_6 {
-    background-image: url("../images/travel-cards/card-6.jpg");
+  &__item:hover &__more {
+    margin-left: -10px;
+    margin-bottom: 3px;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1220px) {
+  .tour-cards {
+    &__item {
+      width: 49%;
+      max-width: 450px;
+    }
+  }
+}
+
+@media (max-width: 1030px) {
   .tour-cards {
     &__list {
       gap: 18px;
     }
 
     &__item {
-      width: 100%;
-      max-width: 450px;
-    }
-
-    &__wrapper {
-      width: 100%;
+      box-shadow: none;
     }
 
     &__name {
       max-width: 100%;
+      margin-bottom: 13px;
     }
+  }
+}
 
-    &__price {
-      margin-bottom: 313px;
-    }
-
-    &__item_1 {
-      background-image: url("../images/travel-cards/card-1-medium.jpg");
-    }
-    &__item_2 {
-      background-image: url("../images/travel-cards/card-2-medium.jpg");
-    }
-    &__item_3 {
-      background-image: url("../images/travel-cards/card-3-medium.jpg");
-    }
-    &__item_4 {
-      background-image: url("../images/travel-cards/card-4-medium.jpg");
-    }
-    &__item_5 {
-      background-image: url("../images/travel-cards/card-5-medium.jpg");
-    }
-    &__item_6 {
-      background-image: url("../images/travel-cards/card-6-medium.jpg");
+@media (max-width: 900px) {
+  .tour-cards {
+    &__item {
+      width: 100%;
     }
   }
 }
@@ -226,8 +218,21 @@
     &__item:hover &__wrapper {
       padding: 50px;
     }
+
+    &__item:hover &__more {
+      margin-left: -20px;
+      margin-bottom: -7px;
+    }
+
+    &__item,
+    &__link,
+    &__wrapper,
+    &__img {
+      border-radius: 30px;
+    }
+
     &__name {
-      margin-bottom: 13px;
+      margin-bottom: 10px;
 
       font-size: 23px;
       line-height: 28px;
@@ -244,16 +249,34 @@
 
 @media (max-width: 500px) {
   .tour-cards {
-    &__item {
-      max-width: 350px;
+    &__img {
+      height: 400px;
     }
 
     &__wrapper {
-      height: 350px;
+      padding: 35px;
+    }
+
+    &__item:hover &__wrapper {
+      padding: 35px;
+    }
+
+    &__item,
+    &__link,
+    &__wrapper,
+    &__img {
+      border-radius: 20px;
     }
 
     &__price {
       margin-bottom: 172px;
+    }
+
+    &__more {
+      margin-bottom: -6px;
+    }
+    &__item:hover &__more {
+      margin-bottom: -6px;
     }
   }
 }
@@ -264,50 +287,28 @@
       margin-bottom: 30px;
     }
   }
+  
   .tour-categories {
     padding: 0 15px;
-
-    &__item:nth-child(4) {
-      margin-left: 0;
-    }
   }
+
   .tour-cards {
-    &__item {
-      max-width: 318px;
+    &__img {
+      height: 318px;
+    }
+
+    &__item,
+    &__wrapper,
+    &__img {
       border-radius: 20px;
     }
 
     &__wrapper {
       padding: 25px;
-      height: 318px;
     }
 
     &__item:hover &__wrapper {
       padding: 25px;
-    }
-
-    &__item_1 {
-      background-image: url("../images/travel-cards/card-1-small.jpg");
-    }
-
-    &__item_2 {
-      background-image: url("../images/travel-cards/card-2-small.jpg");
-    }
-
-    &__item_3 {
-      background-image: url("../images/travel-cards/card-3-small.jpg");
-    }
-
-    &__item_4 {
-      background-image: url("../images/travel-cards/card-4-small.jpg");
-    }
-
-    &__item_5 {
-      background-image: url("../images/travel-cards/card-5-small.jpg");
-    }
-
-    &__item_6 {
-      background-image: url("../images/travel-cards/card-6-small.jpg");
     }
 
     &__name {

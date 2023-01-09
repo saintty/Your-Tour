@@ -56,3 +56,10 @@
     background-color: unset;
   }
 }
+
+@media (max-width: 500px) {
+  .card-button {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}

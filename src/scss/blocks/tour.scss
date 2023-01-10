@@ -10,8 +10,9 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 100px;
+  justify-content: space-between;
+  max-width: 700px;
+  margin: 0 auto 100px;
 
   color: $black;
   font-weight: 700;
@@ -54,7 +55,7 @@
   }
 
   &__item + &__item {
-    margin-left: 31px;
+    margin-left: 10px;
   }
 }
 
@@ -243,6 +244,10 @@
 }
 
 @media (max-width: 500px) {
+  .tour-categories {
+    justify-content: center;
+  }
+
   .tour-cards {
     &__img {
       height: 400px;
@@ -309,6 +314,14 @@
 
     &__name {
       letter-spacing: 0.04em;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .tour-categories {
+    &__item:nth-child(4) {
+      margin-left: 0;
     }
   }
 }

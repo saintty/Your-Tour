@@ -24,8 +24,8 @@
 
     color: $black;
 
-    border-radius: 50px;
     background-color: $beige-200;
+    border-radius: 50px;
   }
 
   &__text {
@@ -72,6 +72,7 @@
     &__list {
       gap: 18px;
     }
+
     &__item {
       padding: 40px;
     }

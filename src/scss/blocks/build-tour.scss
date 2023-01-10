@@ -7,8 +7,8 @@
 .form {
   padding: 70px;
 
-  border-radius: 50px;
   background-color: #fff;
+  border-radius: 50px;
 
   &__fieldset {
     display: flex;
@@ -79,6 +79,7 @@
     border-radius: 50%;
 
     opacity: 0;
+
     transition: all 0.3s ease;
 
     content: "";
@@ -111,7 +112,7 @@
     content: "";
   }
 
-  &__label_license:after {
+  &__label_license::after {
     position: absolute;
 
     top: 7px;
@@ -124,10 +125,10 @@
     border-left: 2px solid $black;
     border-radius: 1px;
 
+    transform: rotate(-45deg);
     opacity: 0;
 
     transition: all 0.3s ease;
-    transform: rotate(-45deg);
 
     content: "";
   }
@@ -136,15 +137,15 @@
     width: 100%;
     padding: 19px;
 
-    border: 1px solid $beige-200;
-    border-radius: 10px;
-    background-color: $beige-100;
-
-    outline: none;
-
     color: $black;
     font-size: 20px;
     line-height: 28px;
+
+    background-color: $beige-100;
+    border: 1px solid $beige-200;
+    border-radius: 10px;
+
+    outline: none;
 
     cursor: pointer;
   }
@@ -160,8 +161,8 @@
   }
 
   &__input:focus {
-    border-color: $gray-300;
     background-color: $beige-200;
+    border-color: $gray-300;
   }
 
   &__input_date {
@@ -169,7 +170,7 @@
   }
 
   &__input_age:checked + &__label_age::after,
-  &__input_license:checked + &__label_license:after {
+  &__input_license:checked + &__label_license::after {
     opacity: 1;
   }
 
@@ -232,11 +233,13 @@
 
   &__button_submit {
     color: $white;
+
     background-color: $green-400;
   }
 
   &__button_reset {
     color: $green-400;
+
     background-color: $green-100;
   }
 }
@@ -278,8 +281,8 @@
     }
 
     &__field + &__field {
-      margin-left: 0;
       margin-top: 33px;
+      margin-left: 0;
     }
 
     &__button {
@@ -375,9 +378,10 @@
       height: 20px;
     }
 
-    &__label_license:after {
+    &__label_license::after {
       top: 5px;
       left: 5px;
+
       width: 10px;
       height: 6px;
     }

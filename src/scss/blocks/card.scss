@@ -1,5 +1,6 @@
 .card-scalable-img {
   scale: 1;
+
   transition: scale 0.3s ease;
 }
 
@@ -18,7 +19,7 @@
   transition: all 0.3s ease;
 }
 
-.card-button:after {
+.card-button::after {
   position: absolute;
 
   top: 50%;

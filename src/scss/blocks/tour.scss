@@ -9,8 +9,8 @@
 .tour-categories {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-bottom: 100px;
 
   color: $black;
@@ -61,8 +61,8 @@
 .tour-cards {
   &__list {
     display: flex;
-    gap: 30px;
     flex-wrap: wrap;
+    gap: 30px;
     align-items: center;
     justify-content: center;
   }
@@ -72,8 +72,8 @@
 
     width: 33%;
     max-width: 370px;
-
     overflow: hidden;
+
     border-radius: 50px;
     box-shadow: 0 4px 4px 0 rgba(#000, 25%);
   }
@@ -103,21 +103,16 @@
     align-items: flex-start;
     justify-content: space-between;
     padding: 50px;
-    transition: all 0.3s ease;
 
-    background: linear-gradient(
-      360deg,
-      rgba(0, 0, 0, 0.4) 0%,
-      rgba(0, 0, 0, 0.06) 48.44%,
-      rgba(0, 0, 0, 0.5) 100%
-    );
+    background: linear-gradient(360deg, rgba(#000, 40%) 0%, rgba(#000, 6%) 48.44%, rgba(#000, 50%) 100%);
     border-radius: 50px;
+
+    transition: all 0.3s ease;
   }
 
   &__item:hover &__wrapper {
     padding: 40px;
   }
-
 
   &__name {
     max-width: 270px;
@@ -142,8 +137,8 @@
   }
 
   &__item:hover &__more {
-    margin-left: -10px;
     margin-bottom: 3px;
+    margin-left: -10px;
   }
 }
 
@@ -197,8 +192,8 @@
     line-height: 23px;
 
     &__item {
-      padding-bottom: 0;
       margin-bottom: 10px;
+      padding-bottom: 0;
     }
 
     &__item + &__item {
@@ -215,20 +210,20 @@
   }
 
   .tour-cards {
-    &__item:hover &__wrapper {
-      padding: 50px;
-    }
-
-    &__item:hover &__more {
-      margin-left: -20px;
-      margin-bottom: -7px;
-    }
-
     &__item,
     &__link,
     &__wrapper,
     &__img {
       border-radius: 30px;
+    }
+
+    &__item:hover &__wrapper {
+      padding: 50px;
+    }
+
+    &__item:hover &__more {
+      margin-bottom: -7px;
+      margin-left: -20px;
     }
 
     &__name {
@@ -257,15 +252,15 @@
       padding: 35px;
     }
 
-    &__item:hover &__wrapper {
-      padding: 35px;
-    }
-
     &__item,
     &__link,
     &__wrapper,
     &__img {
       border-radius: 20px;
+    }
+
+    &__item:hover &__wrapper {
+      padding: 35px;
     }
 
     &__price {
@@ -275,6 +270,7 @@
     &__more {
       margin-bottom: -6px;
     }
+
     &__item:hover &__more {
       margin-bottom: -6px;
     }
@@ -287,7 +283,7 @@
       margin-bottom: 30px;
     }
   }
-  
+
   .tour-categories {
     padding: 0 15px;
   }

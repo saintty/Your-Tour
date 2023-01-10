@@ -3,6 +3,7 @@
     position: relative;
 
     overflow: hidden;
+
     border-radius: 50px;
   }
 
@@ -36,7 +37,7 @@
     justify-content: space-between;
     padding: 60px;
 
-    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%);
+    background: linear-gradient(270deg, rgba(#000, 0%) 0.01%, rgba(#000, 20%) 100%);
     border-radius: 50px;
   }
 
@@ -58,6 +59,7 @@
 
   &__benefits {
     padding-left: 30px;
+
     list-style-type: disc;
   }
 
@@ -100,7 +102,9 @@
     background-color: $white;
 
     opacity: 0;
+
     transition: opacity 0.3s ease;
+
     content: "";
   }
 
@@ -111,10 +115,6 @@
 
 @media (max-width: 768px) {
   .history {
-    &__item + &__item {
-      margin-top: 35px;
-    }
-
     &__card {
       padding: 35px;
     }
@@ -124,6 +124,10 @@
     &__link,
     &__photo {
       border-radius: 30px;
+    }
+
+    &__item + &__item {
+      margin-top: 35px;
     }
 
     &__name {
@@ -149,10 +153,6 @@
 
 @media (max-width: 500px) {
   .history {
-    &__item + &__item {
-      margin-top: 20px;
-    }
-
     &__photo {
       height: 455px;
     }
@@ -168,6 +168,10 @@
       border-radius: 20px;
     }
 
+    &__item + &__item {
+      margin-top: 20px;
+    }
+
     &__name {
       max-width: 160px;
       margin-bottom: 20px;
@@ -177,6 +181,7 @@
       line-height: 28px;
       letter-spacing: 0.04em;
     }
+
     &__description {
       margin-bottom: 23px;
     }

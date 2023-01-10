@@ -118,10 +118,6 @@
   &__name {
     max-width: 270px;
     margin-bottom: 14px;
-
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 43px;
   }
 
   &__price {
@@ -229,9 +225,6 @@
 
     &__name {
       margin-bottom: 10px;
-
-      font-size: 23px;
-      line-height: 28px;
     }
 
     &__price {
@@ -310,10 +303,6 @@
 
     &__item:hover &__wrapper {
       padding: 25px;
-    }
-
-    &__name {
-      letter-spacing: 0.04em;
     }
   }
 }

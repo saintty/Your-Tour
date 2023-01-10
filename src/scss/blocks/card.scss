@@ -1,3 +1,10 @@
+.card-name {
+  color: $white;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 43px;
+}
+
 .card-scalable-img {
   scale: 1;
 
@@ -45,6 +52,11 @@
 }
 
 @media (max-width: 768px) {
+  .card-name {
+    font-size: 29px;
+    line-height: 35px;
+  }
+
   .card:hover .card-scalable-img {
     scale: unset;
   }
@@ -59,6 +71,13 @@
 }
 
 @media (max-width: 500px) {
+  .card-name {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+  }
+
   .card-button {
     font-size: 16px;
     line-height: 23px;
